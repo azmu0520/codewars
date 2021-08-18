@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 export const Wrapper = styled.div`
   * {
     padding: 0;
@@ -58,4 +58,18 @@ export const Btn = styled.button`
   :active {
     background: #2c0d00;
   }
+`;
+
+Btn.Icon = styled(AiOutlineShoppingCart)`
+  width: 20px;
+  margin-right: 0.5rem;
+`;
+
+Btn.Text = styled.div``;
+Btn.Num = styled.div`
+  background: #b94517;
+  padding: 0.25rem 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  border-radius: 40%;
 `;
