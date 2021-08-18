@@ -1,12 +1,13 @@
 import React from 'react';
-import { Navbar, Wrapper, Btn } from './style';
+import { Navbar, Wrapper } from './style';
 import ImgFood from '../../../assets/img/foodimg.jpg';
+import NavabrBtn from './NavbarBtn';
 const Header = () => {
   return (
     <Wrapper>
       <Navbar>
         <h1>Uchqkurgan Meals</h1>
-        <Btn>Cart</Btn>
+        <NavabrBtn></NavabrBtn>
       </Navbar>
       <Navbar.ImgWrap>
         <img src={ImgFood} alt='Food' />
