@@ -12,6 +12,8 @@ export const Navbar = styled.div`
   left: 0;
   width: 80%;
   height: 5rem;
+  transition: ease 5s;
+
   background-color: #8a2b06;
   color: #fff;
   display: flex;
