@@ -1,4 +1,6 @@
 import Card from '../UI/Card';
+import MealItem from './MealItem/MealItem';
+import styled from 'styled-components';
 
 const DUMMY_MEALS = [
   {
@@ -40,16 +42,26 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeals = () => {
-  const mealsList = DUMMY_MEALS.map((meal) => <li>{meal.name}</li>);
+  const mealsList = DUMMY_MEALS.map((meal) => (
+    <MealItem
+      key={meal.key}
+      name={meal.name}
+      description={meal.description}
+      price={meal.price}
+    />
+  ));
 
   return (
     <section>
       <Card>
-        kkkkkk
-        <ul>{mealsList}</ul>
+        <Ul>{mealsList}</Ul>
       </Card>
     </section>
   );
 };
 
 export default AvailableMeals;
+
+const Ul = styled.ul`
+  list-style: none;
+`;

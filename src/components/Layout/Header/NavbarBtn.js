@@ -1,8 +1,8 @@
 import { Btn } from './style';
 
-const NavabrBtn = () => {
+const NavabrBtn = (props) => {
   return (
-    <Btn>
+    <Btn onClick={props.onClick}>
       <Btn.Icon />
       <Btn.Text>Cart</Btn.Text>
       <Btn.Num>3</Btn.Num>
