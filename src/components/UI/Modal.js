@@ -44,10 +44,11 @@ const BackDrop = styled.div`
 
 const UIModal = styled.div`
   position: fixed;
+
   top: 30vh;
   left: 30%;
   width: 40%;
-  height: 10vh;
+
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
