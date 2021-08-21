@@ -5,37 +5,37 @@ import styled from 'styled-components';
 const DUMMY_MEALS = [
   {
     id: 'm1',
-    name: 'Sushi',
+    name: 'Osh',
     description: 'Finest fish meal ever',
     price: 22.99,
   },
   {
     id: 'm2',
-    name: 'Sushi',
+    name: 'Qotirma',
     description: 'Finest fish meal ever',
     price: 22.99,
   },
   {
     id: 'm3',
-    name: 'Sushi',
+    name: 'Honim',
     description: 'Finest fish meal ever',
     price: 22.99,
   },
   {
     id: 'm4',
-    name: 'Sushi',
+    name: 'Baliq',
     description: 'Finest fish meal ever',
     price: 22.99,
   },
   {
     id: 'm5',
-    name: 'Sushi',
+    name: 'Chuchvara',
     description: 'Finest fish meal ever',
     price: 22.99,
   },
   {
     id: 'm6',
-    name: 'Sushi',
+    name: 'Pirashka',
     description: 'Finest fish meal ever',
     price: 22.99,
   },

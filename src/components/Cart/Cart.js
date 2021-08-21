@@ -2,15 +2,25 @@ import styled from 'styled-components';
 import Modal from '../UI/Modal';
 import { useContext } from 'react';
 import CartContext from '../../store/cart-contex';
-
+import CartItem from './CartItem';
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.item.length > 0;
+
+  const cartItemRemove = (id) => {};
+  const cartItemAdd = (item) => {};
   const cartItems = (
     <ul>
       {cartCtx?.item?.map((item) => (
-        <li>{item.name}</li>
+        <CartItem
+          key={item.id}
+          name={item.name}
+          amount={item.amount}
+          price={item.price}
+          onRemove={cartItemRemove.bind(null, item.id)}
+          onAdd={cartItemAdd.bind(null, item)}
+        />
       ))}
     </ul>
   );
@@ -36,6 +46,9 @@ const Cart = (props) => {
 export default Cart;
 
 const Wraper = styled.div`
+  max-height: 500px;
+  overflow-y: scroll;
+  /* background-color: red; */
   .text {
     font-size: 22px;
     font-weight: bolder;
@@ -61,6 +74,7 @@ const Wraper = styled.div`
   .btnWrap {
     margin-left: 70%;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .btnCancel {
     background: white;
