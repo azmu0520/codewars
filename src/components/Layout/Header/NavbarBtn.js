@@ -9,7 +9,7 @@ const NavabrBtn = (props) => {
   return (
     <Btn onClick={props.onClick}>
       <Btn.Icon />
-      <Btn.Text>Cart</Btn.Text>
+      <Btn.Text> Your Cart</Btn.Text>
       <Btn.Num>{NumberOfCards}</Btn.Num>
     </Btn>
   );
