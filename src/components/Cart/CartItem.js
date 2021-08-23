@@ -7,8 +7,8 @@ const CartItem = (props) => {
       <PriceWrap>
         <h2>{props?.name}</h2>
         <PriceItem>
-          <span> {price} </span>
-          <span className='iks'> x{props?.amount} </span>
+          <span className='price'> {price} </span>
+          <span className='iks'> x {props?.amount} </span>
         </PriceItem>
       </PriceWrap>
       <BtnWrap>
@@ -23,8 +23,16 @@ const CartItem = (props) => {
 export default CartItem;
 const PriceItem = styled.div`
   display: flex;
+  align-items: center;
   .iks {
     margin-left: 20px;
+    border: 1px solid #e3e3e3;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .price {
+    color: #8a2b06;
+    font-weight: 600;
   }
 `;
 
@@ -32,7 +40,7 @@ const BtnWrap = styled.div`
   display: flex;
   margin-left: auto;
   button {
-    width: 30px;
+    width: 40px;
     height: 25px;
     color: #8a2b06;
     background-color: white;
@@ -57,6 +65,6 @@ const Li = styled.li`
   align-items: center;
   justify-content: center;
   margin-right: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #aba7a7;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8a2b06;
 `;

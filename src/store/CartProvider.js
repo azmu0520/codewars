@@ -6,12 +6,12 @@ const defaultCartAmount = {
   totalAmount: 0,
 };
 
-const CartReducer = (state, action) => {
+const cartReducer = (state, action) => {
   if (action.type === 'ADD') {
     const updatedTotalAmount =
-      state.totalAmount + action.items.price * action.items.amount;
+      state.totalAmount + action.item.price * action.item.amount;
     const existingCartItemIndex = state?.items?.findIndex(
-      (item) => item.id === action?.items?.id
+      (item) => item.id === action?.item?.id
     );
     const existingCartItem = state?.items[existingCartItemIndex];
 
@@ -24,23 +24,39 @@ const CartReducer = (state, action) => {
       updatedItems = [...state.items];
       updatedItems[existingCartItemIndex] = updatedItem;
     } else {
-      updatedItems = state?.item?.concat(action.item);
+      updatedItems = state?.items?.concat(action.item);
     }
 
     return {
-      item: updatedItems,
+      items: updatedItems,
       totalAmount: updatedTotalAmount,
     };
+  }
+  if (action.type === 'REMOVE') {
+    const existingCartItemIndex = state?.items?.findIndex(
+      (item) => item.id === action?.item?.id
+    );
+    const existingCartItem = state.items[existingCartItemIndex];
+    const updatedTotalAmount = state.totalAmount - existingCartItem.price;
+    let updatedItems;
+    if (existingCartItem.amount === 1) {
+      updatedItems = state.items.filter((item) => item.id !== action.id);
+    } else {
+      const updatedItem = {
+        ...existingCartItem,
+        amount: existingCartItem.amount - 1,
+      };
+    }
   }
   return defaultCartAmount;
 };
 
 const CartProvider = (props) => {
-  const [cartState, dispatchCart] = useReducer(CartReducer, defaultCartAmount);
+  const [cartState, dispatchCart] = useReducer(cartReducer, defaultCartAmount);
   const addItemToCardhandler = (item) => {
     dispatchCart({
       type: 'ADD',
-      items: item,
+      item: item,
     });
   };
   const removeItemFromCardhandler = (id) => {
@@ -53,7 +69,7 @@ const CartProvider = (props) => {
     items: cartState?.items,
     totalAmount: cartState?.totalAmount,
     addItem: addItemToCardhandler,
-    remove: removeItemFromCardhandler,
+    removeItem: removeItemFromCardhandler,
   };
   return (
     <CartContext.Provider value={cartContext}>
