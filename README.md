@@ -9,7 +9,7 @@
 | 13  | []()                                                                                                         | [JavaScript](./8kyu/string/hardest/.js)                 | 8kyu       |
 | 12  | []()                                                                                                         | [JavaScript](./8kyu/string/hardest/.js)                 | 8kyu       |
 | 11  | []()                                                                                                         | [JavaScript](./8kyu/string/hardest/.js)                 | 8kyu       |
-| 10  | []()                                                                                                         | [JavaScript](./8kyu/string/hardest/.js)                 | 8kyu       |
+| 10  | [Well of Ideas - Easy Version](https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript)      | [JavaScript](./8kyu/string/hardest/10.well.js)          | 8kyu       |
 | 9   | [Simple Comparison?](https://www.codewars.com/kata/57f6ecdfcca6e045d2001207/train/javascript)                | [JavaScript](./8kyu/string/hardest/9.add.js)            | 8kyu       |
 | 8   | [Alan Partridge II - Apple Turnover](https://www.codewars.com/kata/580a094553bd9ec5d800007d/javascript)      | [JavaScript](./8kyu/string/hardest/8.apple.js)          | 8kyu       |
 | 7   | [ES6 string addition](https://www.codewars.com/kata/582e4c3406e37fcc770001ad/train/javascript)               | [JavaScript](./8kyu/string/hardest/7.joinStrings.js)    | 8kyu       |
