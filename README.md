@@ -4,12 +4,17 @@
 
 | #   | Title                                                                                                                       | Solution                                                    | Difficulty |
 | --- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------- |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
-| 20  | []()                                                                                                                        | [JavaScript](./8kyu/hardest/logic/.js)                      | 8kyu       |
+| 26  | []()                                                                                                                        | [JavaScript](./7kyu/positive/.js)                           | 7kyu       |
+| 30  | [Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/javascript)                                         | [JavaScript](./7kyu/positive/10.isIsogram.js)               | 7kyu       |
+| 29  | [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)                                   | [JavaScript](./7kyu/positive/9.filter_list.js)              | 7kyu       |
+| 28  | [You're a square!](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript)                                 | [JavaScript](./7kyu/positive/8.isSquare.js)                 | 7kyu       |
+| 27  | [Mumbling](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript)                                         | [JavaScript](./7kyu/positive/7.accum.js)                    | 7kyu       |
+| 26  | [Get the Middle Character](https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript)                         | [JavaScript](./7kyu/positive/6.getMiddle.js)                | 7kyu       |
+| 25  | [Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155)                                                  | [JavaScript](./7kyu/positive/5.descendingOrder.js)          | 7kyu       |
+| 24  | [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript)                               | [JavaScript](./7kyu/positive/4.highAndLow.js)               | 7kyu       |
+| 23  | [Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)                               | [JavaScript](./7kyu/positive/3.squareDigits.js)             | 7kyu       |
+| 22  | [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript)                                | [JavaScript](./7kyu/positive/2.disemvowel.js)               | 7kyu       |
+| 21  | [Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript)                                      | [JavaScript](./7kyu/positive/1.getCount.js)                 | 7kyu       |
 | 20  | [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript)                          | [JavaScript](./8kyu/hardest/logic/10.summation.js)          | 8kyu       |
 | 19  | [Convert boolean values to strings 'Yes' or 'No'.](https://www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript) | [JavaScript](./8kyu/hardest/logic/9.boolToWord.js)          | 8kyu       |
 | 18  | [What's up next?](https://www.codewars.com/kata/542ebbdb494db239f8000046/train/javascript)                                  | [JavaScript](./8kyu/hardest/logic/8.nextItem.js)            | 8kyu       |
