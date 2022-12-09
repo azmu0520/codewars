@@ -4,7 +4,7 @@
 
 | #   | Title                                                                                                                       | Solution                                                    | Difficulty |
 | --- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------- |
-| 26  | []()                                                                                                                        | [JavaScript](./7kyu/positive/.js)                           | 7kyu       |
+| 26  | [Where's Waldo?](https://www.codewars.com/kata/638244fb08da6c61361d2c40/train/javascript)                                   | [JavaScript](./7kyu/logic/1.findWaldo.js)                   | 7kyu       |
 | 30  | [Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/javascript)                                         | [JavaScript](./7kyu/positive/10.isIsogram.js)               | 7kyu       |
 | 29  | [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)                                   | [JavaScript](./7kyu/positive/9.filter_list.js)              | 7kyu       |
 | 28  | [You're a square!](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript)                                 | [JavaScript](./7kyu/positive/8.isSquare.js)                 | 7kyu       |
