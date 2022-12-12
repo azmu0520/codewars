@@ -1,23 +1,20 @@
 function queueTime(customers, n) {
   //TODO
   let res = 0;
-  let bigOne = Math.max(...customers);
-  console.log(bigOne);
+  let rest = 0;
   for (let i = 0; i < customers.length; i = i + n) {
+    let totalOne = 0;
     for (let j = i; j < i + n; j++) {
-      if (bigOne < customers[j]) {
-        bigOne = customers[j];
+      if (totalOne <= customers[j]) {
+        totalOne = customers[j];
+        rest -= customers[j];
       } else {
-        res += customers[j];
-        bigOne -= customers[j];
+        totalOne -= customers[j];
       }
-      //   console.log(customers[j]);
+      console.log(rest);
     }
-    // console.log('end');
-    // console.log(bigOne);
+    rest += totalOne;
   }
-  res += bigOne;
-  console.log(res);
 }
 
 queueTime([1, 2, 3, 4], 1);
