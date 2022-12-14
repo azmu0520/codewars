@@ -1,16 +1,16 @@
 function twoSum(numbers, target) {
   // ...
   let res = [];
-  for (let i = 0; i < numbers.length; i++) {
-    let resNum = target - numbers[i];
-    let have = numbers.indexOf(resNum);
-    console.log(have);
-    if (have !== i && have >= 0) {
-      numbers;
-
-      res.unshift(have);
+  parent: for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length; j++) {
+      if (i == j) continue;
+      if (numbers[i] + numbers[j] == target) {
+        res.push(i, j);
+        break parent;
+      }
     }
   }
+  return res;
 }
 
 twoSum([2, 2, 3], 4);
