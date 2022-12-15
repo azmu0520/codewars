@@ -1,22 +1,32 @@
-let res = [];
 function sqInRect(lng, wdth) {
   //your code here
-  if (lng == wdth && !res.length) return null;
-  if (lng < wdth) {
-    let a = lng;
-    lng = wdth;
-    wdth = a;
-  }
-  console.log(lng, wdth);
-  console.log(res);
-  while (wdth >= 1 && lng >= 1) {
-    if (lng - wdth == wdth) {
-      res.push(wdth, wdth, wdth);
-    } else {
-      res.push(wdth);
-      sqInRect(lng - wdth, wdth);
+  let res = [];
+  function add(h, w) {
+    if (h == w && !res.length) return null;
+    if (h < w) {
+      let a = h;
+      h = w;
+      w = a;
     }
+
+    if (w >= 1) {
+      res.push(w);
+      add(w, h - w);
+    }
+    return res;
   }
+
+  return add(lng, wdth);
 }
 
-sqInRect(20, 14);
+console.log(sqInRect(20, 14));
+
+function sqInRect(lng, wdth) {
+  let arr = [];
+  if (lng === wdth) return null;
+  while (lng > 0 && wdth > 0) {
+    arr.push(lng > wdth ? wdth : lng);
+    lng > wdth ? (lng -= wdth) : (wdth -= lng);
+  }
+  return arr;
+}
