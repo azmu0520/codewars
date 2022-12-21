@@ -1,22 +1,27 @@
 var maxSequence = function (arr) {
   // ...
-  let most = [];
-  let totalSum = 0;
+  let maxIn = 0;
   for (let i = 0; i < arr.length; i++) {
-    let res = [];
+    let test = 0;
     for (let j = i; j < arr.length; j++) {
-      res.push(arr[j]);
+      test += arr[j];
+      if (maxIn < test) maxIn = test;
     }
-
-    let sum = res.reduce((a, b) => a + b, 0);
-    if (totalSum < sum) {
-      totalSum = sum;
-      most = [...res];
-    }
-
-    res.length = 0;
   }
-  console.log(most);
+  return maxIn;
 };
 
 maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+
+var maxSequence = function (arr) {
+  var min = 0,
+    ans = 0,
+    i,
+    sum = 0;
+  for (i = 0; i < arr.length; ++i) {
+    sum += arr[i];
+    min = Math.min(sum, min);
+    ans = Math.max(ans, sum - min);
+  }
+  return ans;
+};
